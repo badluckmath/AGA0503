@@ -1,0 +1,4 @@
+Conseguimos!
+Para os dados do problema do EP1, a densidade de grãos encontrada foi: 2.01e-01 grãos por metro cúbico
+
+Pressione ENTER para sair.
