@@ -1,0 +1,37 @@
+1º Passo) Realizar a leitura dos dados contidos no arquivos recebido; 
+		- Isso é fácil de fazer utilizando funções do próprio Python3
+
+2º Passo) Nesse passo é importante que o usuário impute valores pertinentes: 
+		- inserir temperaturas mínima e máxima da estrela;
+		- inserir temperaturas mínima e máxima da poeira;
+		- inserir o N, tal que N é o número de espaçamentos entre máx e mín dos valores de temperaturas, tanto para poeira quanto para estrela;
+
+		### chi=((observado-teorico)**2)/(sigma**2) 		###
+
+		### expoente = (h*c / (wav*k*temp))			###
+		### divisor = (wav**5) * (np.exp(expoente)-1.0) 	###
+		### blackbody = 2*h*(c**2) / divisor			###
+              
+		- Agora pode-se gerar N valores de temperatura para estrela e N valores de temperatura da poeira;
+		- Constrói-se o mapa de Chi^2, partindo dos N x N valores de temperaturas adquiridos até agora. 
+
+3º Passo) De forma facilitada, agora, pode-se buscar, na tabela NxN gerada dos Chi^2, o valor mínimo e verificar as temperaturas associados ao mesmo. 
+
+4º Passo) Construção dos gráficos T x Chi^2, tanto para estrela quanto para poeira. Poderíamos, inclusive, fazer esse passo antes, mas segue-se o roteiro proposto do EP. 
+		- Cria-se Arrays de valores de temperatura e Chi^2 da estrela;
+		- Cria-sa Arrays de valores de temperatura e chi^2 da poeira; 
+		- Avalia-se o intervalo de melhor ajuste para plotagem; 
+		- Plotam-se os gráficos (incluindo um rotina que salve os plots, evidentemente);
+
+Dica: para facilitar a visualização, restrinja os valores de Chi^2 entre o mínimo e um certo múltiplo desse mínimo (dá pra ir testando os mínimos aí a gente vê algo decente).
+
+Passo 5) Agora tem que fazer o mapa do chi^2. Tem como utilizar numpy e scipy pra isso que eu sei. 
+Podemos visualizar mínimos e máximos no mapa. (Não esquecer de salvar o plot -> plt.savefig)
+
+Passo 6) Fazer gráficos dos dados e do melhor modelo (CorposNegros) e dos resíduos. 
+		- pra fazer isso tem que calcular o corponegro com os valores ao redor do mínimo no mapa do chi^2. 
+		- tem que combinar as funções de corponegro da estrela e da poeira (usar funções do primeiro EP.)
+		- calcular os resíduos: 
+		### residuo = (x - xmedio)/sigma ###
+
+

@@ -1,0 +1,13 @@
+Valor de temperatura minima da estrela: 8000
+Valor de temperatura maxima da estrela: 9000
+Valor de temperatura minima da poeira: 400
+Valor de temperatura maxima da poeira: 500
+Espaçamentos entre os maximos e minimos de temperatura: 200
+
+Calculando modelos teoricos... Aguarde.
+
+Procurando o melhor ajuste...
+
+Temperatura da estrela: 8698.5 Kelvin.
+Temperatura da poeira: 456.78 Kelvin.
+
